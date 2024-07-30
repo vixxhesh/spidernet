@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
-from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from .models import Post
 from .forms import PostForm
@@ -10,6 +10,10 @@ from .forms import PostForm
 def post_list(request):
     posts = Post.objects.all()  # Retrieve all posts from the database
     return render(request, 'blog/post_list.html', {'posts': posts})
+
+class PostDetailView(DetailView):
+    model = Post
+    template_name = 'blog/post_detail.html'
 
 
 class PostCreateView(CreateView):
