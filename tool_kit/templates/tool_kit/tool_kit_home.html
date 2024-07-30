@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Toolkit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .card {
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        .container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1>Toolkit</h1>
+    <div class="container">
+        <div class="row">
+            <!-- Income vs Expense Chart Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Income vs Expense Chart</h5>
+                        <p class="card-text">Visualize your income and expenses over time with interactive charts.</p>
+                        <a href="/income-expense-chart" class="btn btn-primary">View Tool</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Financial Calculator Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Financial Calculator</h5>
+                        <p class="card-text">Calculate interest rates, loan repayments, and other financial metrics.</p>
+                        <a href="/financial-calculator" class="btn btn-primary">View Tool</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tax Filing Guide Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tax Filing Guide</h5>
+                        <p class="card-text">Get guidance on how to file your taxes correctly and efficiently.</p>
+                        <a href="/tax-filing-guide" class="btn btn-primary">View Tool</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Appointment Scheduler Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Appointment Scheduler</h5>
+                        <p class="card-text">Schedule and manage appointments with ease.</p>
+                        <a href="/appointment-scheduler" class="btn btn-primary">View Tool</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Document Storage Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Document Storage</h5>
+                        <p class="card-text">Store and organize your important documents securely.</p>
+                        <a href="/document-storage" class="btn btn-primary">View Tool</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Financial Reports Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Financial Reports</h5>
+                        <p class="card-text">Generate and view comprehensive financial reports.</p>
+                        <a href="/financial-reports" class="btn btn-primary">View Tool</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
